@@ -4,17 +4,8 @@ library(tidyverse)
 
 
 ##### Loading data ####
-readr::write_csv(x = data_example, file = "D:/OneDrive - Nexus365/EHPC-Lab/examples-of-graphs/dotplot/example_1/data_example.csv")
+readr::write_csv(x = data_example, file = "data/data_example.csv")
 ##### Loading data ####
-
-
-data_example <- data.frame(
-  Groups   = c("A", "A", "A", "B", "B", "B", "C", "C", "C"),
-  Features = c("Feature 1", "Feature 2", "Feature 3", "Feature 1", "Feature 2", "Feature 3", "Feature 1", "Feature 2", "Feature 3"),
-  Values   = rnorm(n = 9, mean = 0,  sd = 2),
-  Pvalues  = c(0.01, 0.4, 0.05, 0.01, 0.4, 0.05, 0.01, 0.4, 0.05),
-  Size     = rnorm(n = 9, mean = 50, sd = 5)
-)
 
 
 ##### Subsetting data based on pvalue ####
@@ -39,3 +30,4 @@ ggplot(data = data_example, aes(x = Groups, y = Features, color = Values, size =
 ggsave(filename = "dotplot_example.png")
 ggsave(filename = "dotplot_example.pdf")
 ##### Save plot in PNG, PDF or SVG files ####
+
