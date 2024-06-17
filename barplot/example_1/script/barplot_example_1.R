@@ -4,7 +4,7 @@ library(tidyverse)
 
 
 ##### Loading data ####
-readr::write_csv(x = data_example, file = "data/data_example.csv")
+data_example <- readr::read_csv(file = "data/data_example.csv")
 ##### Loading data ####
 
 
