@@ -21,6 +21,6 @@ ggplot(data = data_example, aes(x = Groups, y = Size, fill = Features)) +
 
 
 ##### Save plot in PNG, PDF or SVG files ####
-ggsave(filename = "barplot_example.png")
-ggsave(filename = "barplot_example.pdf")
+ggsave(filename = "barplot/example_2/barplot_example2.png")
+ggsave(filename = "barplot/example_2/barplot_example2.pdf")
 ##### Save plot in PNG, PDF or SVG files ####
